@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="icon" type="image/png" href="Obrázky/logo.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-flag-checkered"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Jezdci.html">Jezdci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Kontakni_Formular.html">Kontaktní formulář</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Progres_Bar.html">Progress bar</a>
+          </li>
+        </ul>
+             <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+            <li><a class="dropdown-item" href="Prihlaseni.html">Přihlášení</a></li>
+            <li><a class="dropdown-item" href="Registrace.html">Registrace</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+    <h1 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Kontaktní formulář</h1>
+<form class="container mt-5" style="max-width: 500px;" autocomplete="off">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" placeholder="Zadejte Email" name="KontaktniEmail" id="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Zpráva</label>
+    <textarea class="form-control" name="zprava" id="message" cols="30" rows="6" placeholder="Vaše zpráva" required></textarea>
+  </div>
+  <div class="text-center">
+    <input type="submit" class="btn btn-dark" value="Odeslat">
+  </div>
+</form>
+
+  <h1 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Často kladené dotazy ohledně Formule 1.</h1>
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne" style="font-family: initial">
+        <b>Jak dlouho trvá závod Formule 1? </b>  
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion" style="font-family: initial">
+      <div class="card-body">
+        Závod Formule 1 obvykle trvá přibližně 1,5 až 2 hodiny. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo"  style="font-family: initial">
+        <b>Kolik se jedezdí závodů v sezóně Formule 1?</b>
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" style="font-family: initial">
+      <div class="card-body">
+        Sezóna Formule 1 má obvykle kolem 23–24 závodů.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree" style="font-family: initial">
+       <b> Jak rychle jezdí auta Formule 1?</b>
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion" style="font-family: initial">
+      <div class="card-body">
+        Auta F1 dosahují rychlosti přes 350 km/h.
+      </div>
+    </div>
+  </div>
+<div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour" style="font-family: initial">
+        <b>Kolik stojí auto Formule 1?</b>
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-bs-parent="#accordion" style="font-family: initial">
+      <div class="card-body">
+       Cena je asi 3 430 000 000 Kč
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive" style="font-family: initial">
+        <b>Co je to DRS?</b>
+      </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-bs-parent="#accordion" style="font-family: initial">
+      <div class="card-body"> 
+        DRS (Drag Reduction System) je systém, který snižuje odpor vzduchu a zvyšuje rychlost auta – používá se pro snazší předjíždění.
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

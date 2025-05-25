@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="icon" type="image/png" href="Obrázky/logo.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-flag-checkered"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Jezdci.html">Jezdci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Kontakni_Formular.html">Kontaktní formulář</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Progres_Bar.html">Progress bar</a>
+          </li>
+        </ul>
+             <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+            <li><a class="dropdown-item" href="Prihlaseni.html">Přihlášení</a></li>
+            <li><a class="dropdown-item" href="Registrace.html">Registrace</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5" style="max-width: 400px;">
+    <form autocomplete="off">
+      <h1 class="text-center mb-4" style="font-weight: bold; font-style: italic; font-family: 'Times New Roman', Times, serif;">Přihlášení</h1>
+      <div class="mb-3">
+        <label for="login" class="form-label">Login</label>
+        <input type="text" class="form-control" id="login" name="login" placeholder="Zadejte login" required autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label for="heslo" class="form-label">Heslo</label>
+        <input type="password" class="form-control" id="heslo" name="heslo" placeholder="Zadejte heslo" required>
+      </div>
+      <div class="text-center">
+        <input type="submit" class="btn btn-dark" value="Přihlásit">
+      </div>
+    </form>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
