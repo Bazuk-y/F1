@@ -49,29 +49,34 @@
     <h1 style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif" class="text-center pt-3">Registrace
   </h1>
   <form action="" class="container mt-4" style="max-width: 500px;">
-    <div class="mb-3">
-      <label for="Login" class="form-label">Login</label>
+    <div class="form-floating mb-3">
       <input type="text" class="form-control" placeholder="Login" name="Login" id="Login" autocomplete="off" required>
+      <label for="Login">Login</label>
     </div>
-    <div class="mb-3">
-      <label for="Heslo" class="form-label">Heslo</label>
-      <input type="password" class="form-control" placeholder="Heslo" name="Heslo" id="Heslo" required>
+    <div class="input-group mb-3">
+      <div class="form-floating flex-grow-1">
+        <input type="password" class="form-control" placeholder="Heslo" name="Heslo" id="Heslo" required>
+        <label for="Heslo">Heslo</label>
+      </div>
+      <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
     </div>
-    <div class="mb-3">
-      <label for="HesloZnovu" class="form-label">Heslo znovu</label>
-      <input type="password" class="form-control" placeholder="Heslo znovu" name="HesloZnovu" id="HesloZnovu" required>
+    <div class="input-group mb-3">
+      <div class="form-floating flex-grow-1">
+        <input type="password" class="form-control" placeholder="Heslo znovu" name="HesloZnovu" id="HesloZnovu" required>
+        <label for="HesloZnovu">Heslo znovu</label>
+      </div>
+      <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
     </div>
-    <div class="mb-3">
-      <label for="Jmeno" class="form-label">Jméno</label>
+    <div class="form-floating mb-3">
       <input type="text" class="form-control" placeholder="Jméno" name="Jmeno" id="Jmeno" required>
+      <label for="Jmeno">Jméno</label>
     </div>
-    <div class="mb-3">
-      <label for="Prijmeni" class="form-label">Příjmení</label>
+    <div class="form-floating mb-3">
       <input type="text" class="form-control" placeholder="Příjmení" name="Prijmeni" id="Prijmeni" required>
+      <label for="Prijmeni">Příjmení</label>
     </div>
-    <div class="mb-3">
-      <label for="Zeme" class="form-label">Země</label>
-      <select class="form-select" name="Zeme" id="Zeme" required>
+    <div class="form-floating mb-3">
+      <select class="form-select" name="Zeme" id="Zeme" required aria-label="Země">
         <option value="" disabled selected>Vyberte zemi</option>
         <option value="CZ">Česká republika</option>
         <option value="SK">Slovensko</option>
@@ -84,13 +89,14 @@
         <option value="VA">Vatikán</option>
         <option value="KP">Severní Korea</option>
       </select>
+      <label for="Zeme">Země</label>
     </div>
-    <div class="mb-3">
-      <label for="Email" class="form-label">Email</label>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Váš Email" name="Email" id="Email" required>
-        <span class="input-group-text">@seznam.cz</span>
+    <div class="input-group mb-3">
+      <div class="form-floating flex-grow-1">
+        <input type="email" class="form-control" placeholder="Váš Email" name="Email" id="Email" required>
+        <label for="Email">Email</label>
       </div>
+      <span class="input-group-text">@seznam.cz</span>
     </div>
     <div class="text-center">
       <input type="submit" class="btn btn-dark" value="Registrovat">

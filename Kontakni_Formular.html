@@ -57,6 +57,10 @@
     <label for="message" class="form-label">Zpráva</label>
     <textarea class="form-control" name="zprava" id="message" cols="30" rows="6" placeholder="Vaše zpráva" required></textarea>
   </div>
+  <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('message');
+  </script>
   <div class="text-center">
     <input type="submit" class="btn btn-dark" value="Odeslat">
   </div>
