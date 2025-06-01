@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="icon" type="image/png" href="Obrázky/logo.png">
+
+    <style>
+        body {
+      background-image: url(Obrázky/pozadi.png); /* cesta k obrázku */
+      background-size: cover;      /* roztáhne obrázek přes celou stránku */
+      background-repeat: no-repeat;/* nebude se opakovat */
+      background-attachment: fixed;/* zůstane na místě při scrollování */
+    }
+  </style>
 </head>
 
 <body>
@@ -47,26 +56,26 @@
       </div>
     </div>
   </nav>
-    <h1 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Kontaktní formulář</h1>
+    <h1 class="text-center pt-3 text-white" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Kontaktní formulář</h1>
 <form class="container mt-5" style="max-width: 500px;" autocomplete="off">
   <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
+    <label for="email" class="form-label text-white">Email</label>
     <input type="email" class="form-control" placeholder="Zadejte Email" name="KontaktniEmail" id="email" required>
   </div>
   <div class="mb-3">
-    <label for="message" class="form-label">Zpráva</label>
+    <label for="message" class="form-label text-white">Zpráva</label>
     <textarea class="form-control" name="zprava" id="message" cols="30" rows="6" placeholder="Vaše zpráva" required></textarea>
   </div>
   <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
   <script>
     CKEDITOR.replace('message');
   </script>
-  <div class="text-center">
-    <input type="submit" class="btn btn-dark" value="Odeslat">
-  </div>
+<div class="text-center">
+  <input type="submit" class="btn btn-light text-dark" value="Odeslat">
+</div>
 </form>
 
-  <h1 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Často kladené dotazy ohledně Formule 1.</h1>
+  <h1 class="text-center pt-3 text-white" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Často kladené dotazy ohledně Formule 1.</h1>
 <div id="accordion">
 
   <div class="card">

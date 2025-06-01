@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
   <link rel="icon" type="image/png" href="Obrázky/logo.png">
   <style>
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      filter: invert(1);
-    }
+
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -27,6 +24,14 @@
     .carousel-control-next {
       right: 20%;
     }
+
+    body {
+      background-image: url(Obrázky/pozadi.png); /* cesta k obrázku */
+      background-size: cover;      /* roztáhne obrázek přes celou stránku */
+      background-repeat: no-repeat;/* nebude se opakovat */
+      background-attachment: fixed;/* zůstane na místě při scrollování */
+    }
+
 
   </style>
 </head>
@@ -65,118 +70,119 @@
       </div>
     </div>
   </nav>
-
-  <h1 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Formule 1</h1>
-  <p class="p-3 text-center" style="font-size: 20px;">Formule 1 je nejprestižnější a nejrychlejší kategorie automobilových závodů na světě. <br>Jde o šampionát, ve kterém se během sezóny koná série závodů zvaných <b>"Velká cena"</b> ty se jezdí po celém světě. </p>
-<h2 class="text-center pt-3" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Tratě</h2>
+  <div class="text-center my-3">
+<img src="Obrázky/Nadpis.png" alt="" width="90%">
+</div>
+  <p class="p-3 text-center text-white" style="font-size: 30px;">Formule 1 je nejprestižnější a nejrychlejší kategorie automobilových závodů na světě. <br>Jde o šampionát, ve kterém se během sezóny koná série závodů zvaných <b>"Velká cena"</b> ty se jezdí po celém světě. </p>
+<h1 class="text-center pt-3 text-white" style="font-weight: bold; font-style: italic;font-family: 'Times New Roman', Times, serif">Tratě</h1>
 
 <!-- CAROUSEL -->
-<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner text-center">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="Obrázky/Australia.png" class="d-block mx-auto" alt="Austrálie" height="200" width="200">
-      <h5 class="mt-2">Austrálie <span class="flag-icon flag-icon-au me-2"></span></h5>    
+      <h5 class="mt-2 text-white">Austrálie <span class="flag-icon flag-icon-au me-2"></span></h5>    
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img src="Obrázky/China.png" class="d-block mx-auto" alt="Čína" height="200" width="200">
-      <h5 class="mt-2">Čína <span class="flag-icon flag-icon-cn me-2"></span></h5>
+      <h5 class="mt-2 text-white">Čína <span class="flag-icon flag-icon-cn me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Japan.png" class="d-block mx-auto" alt="Japonsko" height="200" width="200">
-      <h5 class="mt-2">Japonsko <span class="flag-icon flag-icon-jp me-2"></span></h5>
+      <h5 class="mt-2 text-white" text-white>Japonsko <span class="flag-icon flag-icon-jp me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Bahrain.png" class="d-block mx-auto" alt="Bahrajn" height="200" width="200">
-      <h5 class="mt-2">Bahrajn <span class="flag-icon flag-icon-bh me-2"></span></h5>
+      <h5 class="mt-2 text-white">Bahrajn <span class="flag-icon flag-icon-bh me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Saudi_Arabia.png" class="d-block mx-auto" alt="Saudská Arábie" height="200" width="200">
-      <h5 class="mt-2">Saudská Arábie <span class="flag-icon flag-icon-sa me-2"></span></h5>
+      <h5 class="mt-2 text-white">Saudská Arábie <span class="flag-icon flag-icon-sa me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Miami.png" class="d-block mx-auto" alt="Miami" height="200" width="200">
-      <h5 class="mt-2">Miami <span class="flag-icon flag-icon-us me-2"></span></h5>
+      <h5 class="mt-2 text-white">Miami <span class="flag-icon flag-icon-us me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Imola.png" class="d-block mx-auto" alt="Imola" height="200" width="200">
-      <h5 class="mt-2">Imola <span class="flag-icon flag-icon-it me-2"></span></h5>
+      <h5 class="mt-2 text-white">Imola <span class="flag-icon flag-icon-it me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Monaco.png" class="d-block mx-auto" alt="Monako" height="200" width="200">
-      <h5 class="mt-2">Monako <span class="flag-icon flag-icon-mc me-2"></span></h5>
+      <h5 class="mt-2 text-white">Monako <span class="flag-icon flag-icon-mc me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Spain.png" class="d-block mx-auto" alt="Španělsko" height="200" width="200">
-      <h5 class="mt-2">Španělsko <span class="flag-icon flag-icon-es me-2"></span></h5>
+      <h5 class="mt-2 text-white">Španělsko <span class="flag-icon flag-icon-es me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Canada.png" class="d-block mx-auto" alt="Kanada" height="200" width="200">
-      <h5 class="mt-2">Kanada <span class="flag-icon flag-icon-ca me-2"></span></h5>
+      <h5 class="mt-2 text-white">Kanada <span class="flag-icon flag-icon-ca me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Austria.png" class="d-block mx-auto" alt="Rakousko" height="200" width="200">
-      <h5 class="mt-2">Rakousko <span class="flag-icon flag-icon-at me-2"></span></h5>
+      <h5 class="mt-2 text-white">Rakousko <span class="flag-icon flag-icon-at me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Great_Britain.png" class="d-block mx-auto" alt="Spojené království" height="200" width="200">
-      <h5 class="mt-2">Velká Británie <span class="flag-icon flag-icon-gb me-2"></span></h5>
+      <h5 class="mt-2 text-white">Velká Británie <span class="flag-icon flag-icon-gb me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Belgium.png" class="d-block mx-auto" alt="Belgie" height="200" width="200">
-      <h5 class="mt-2">Belgie <span class="flag-icon flag-icon-be me-2"></span></h5>
+      <h5 class="mt-2 text-white">Belgie <span class="flag-icon flag-icon-be me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Hungary.png" class="d-block mx-auto" alt="Maďarsko" height="200" width="200">
-      <h5 class="mt-2">Maďarsko <span class="flag-icon flag-icon-hu me-2"></span></h5>
+      <h5 class="mt-2 text-white">Maďarsko <span class="flag-icon flag-icon-hu me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Netherlands.png" class="d-block mx-auto" alt="Nizozemsko" height="200" width="200">
-      <h5 class="mt-2">Nizozemsko <span class="flag-icon flag-icon-nl me-2"></span></h5>
+      <h5 class="mt-2 text-white">Nizozemsko <span class="flag-icon flag-icon-nl me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Monza.png" class="d-block mx-auto" alt="Monza" height="200" width="200">
-      <h5 class="mt-2">Monza <span class="flag-icon flag-icon-it me-2"></span></h5>
+      <h5 class="mt-2 text-white">Monza <span class="flag-icon flag-icon-it me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Azerbajian.png" class="d-block mx-auto" alt="Azerbajdžán" height="200" width="200">
-      <h5 class="mt-2">Azerbajdžán <span class="flag-icon flag-icon-az me-2"></span></h5>
+      <h5 class="mt-2 text-white">Azerbajdžán <span class="flag-icon flag-icon-az me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Singapore.png" class="d-block mx-auto" alt="Singapur" height="200" width="200">
-      <h5 class="mt-2">Singapur <span class="flag-icon flag-icon-sg me-2"></span></h5>
+      <h5 class="mt-2 text-white">Singapur <span class="flag-icon flag-icon-sg me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/austin.png" class="d-block mx-auto" alt="Austin" height="200" width="200">
-      <h5 class="mt-2">Austin <span class="flag-icon flag-icon-us me-2"></span></h5>
+      <h5 class="mt-2 text-white">Austin <span class="flag-icon flag-icon-us me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Mexico.png" class="d-block mx-auto" alt="Mexiko" height="200" width="200">
-      <h5 class="mt-2">Mexiko <span class="flag-icon flag-icon-mx me-2"></span></h5>
+      <h5 class="mt-2 text-white">Mexiko <span class="flag-icon flag-icon-mx me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Brazil.png" class="d-block mx-auto" alt="Brazílie" height="200" width="200">
-      <h5 class="mt-2">Brazílie <span class="flag-icon flag-icon-br me-2"></span></h5>
+      <h5 class="mt-2 text-white">Brazílie <span class="flag-icon flag-icon-br me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Las_Vegas.png" class="d-block mx-auto" alt="Las Vegas" height="200" width="200">
-      <h5 class="mt-2">Las Vegas <span class="flag-icon flag-icon-us me-2"></span></h5>
+      <h5 class="mt-2 text-white">Las Vegas <span class="flag-icon flag-icon-us me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Qatar.png" class="d-block mx-auto" alt="Katar" height="200" width="200">
-      <h5 class="mt-2">Katar <span class="flag-icon flag-icon-qa me-2"></span></h5>
+      <h5 class="mt-2 text-white">Katar <span class="flag-icon flag-icon-qa me-2"></span></h5>
     </div>
     <div class="carousel-item">
       <img src="Obrázky/Abu_Dhabi.png" class="d-block mx-auto" alt="Spojené arabské emiráty" height="200" width="200">
-      <h5 class="mt-2">Spojené arabské emiráty <span class="flag-icon flag-icon-ae me-2"></span></h5>
+      <h5 class="mt-2 text-white">Spojené arabské emiráty <span class="flag-icon flag-icon-ae me-2"></span></h5>
     </div>
   </div>
 
   <!-- Šipky pro posouvání -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Předchozí</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Další</span>
   </button>
